@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">InteractiveStory</string>
+    <string name="name_key">name</string>
 </resources>

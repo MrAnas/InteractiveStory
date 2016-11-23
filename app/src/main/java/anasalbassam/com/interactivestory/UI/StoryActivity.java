@@ -1,8 +1,11 @@
-package anasalbassam.com.interactivestory;
+package anasalbassam.com.interactivestory.UI;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import anasalbassam.com.interactivestory.Model.Page;
+import anasalbassam.com.interactivestory.R;
 
 public class StoryActivity extends AppCompatActivity {
 
@@ -12,9 +15,10 @@ public class StoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_story);
 
         Intent intent = getIntent();
-        String name = intent.getStringExtra("name");
+        String name = intent.getStringExtra(getString(R.string.name_key));
         if(name == null){
             name = "Friend";
         }
+
     }
 }

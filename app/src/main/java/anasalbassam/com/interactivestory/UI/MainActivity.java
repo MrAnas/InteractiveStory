@@ -1,4 +1,4 @@
-package anasalbassam.com.interactivestory;
+package anasalbassam.com.interactivestory.UI;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import anasalbassam.com.interactivestory.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startStory(String name) {
         Intent intent = new Intent(this,StoryActivity.class);
-        intent.putExtra("name",name);
+        intent.putExtra(getString(R.string.name_key),name);
         startActivity(intent);
     }
 }
